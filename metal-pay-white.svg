@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-label="Metal Pay logo">
+  <circle cx="120" cy="120" r="78" fill="#FFFFFF"/>
+  <path d="M91 82h52c23 0 38 14 38 35s-15 35-38 35h-24v24H91V82Zm49 46c9 0 14-4 14-11s-5-11-14-11h-21v22h21Z" fill="#111820"/>
+  <text x="232" y="143" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800">Metal Pay</text>
+</svg>

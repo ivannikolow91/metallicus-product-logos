@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-label="Metal X logo">
+  <rect x="42" y="42" width="156" height="156" rx="78" fill="#FFFFFF"/>
+  <path d="M82 82h32l19 27 19-27h32l-34 40 36 44h-33l-20-29-21 29H80l36-44-34-40Z" fill="#111820"/>
+  <text x="232" y="143" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800">Metal X</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-label="Metal Dollar logo">
+  <circle cx="120" cy="120" r="78" fill="#111111"/>
+  <path d="M131 73v15c20 3 34 14 36 32h-27c-2-7-8-11-17-11-10 0-15 4-15 10 0 8 9 10 24 13 21 5 38 12 38 34 0 18-14 31-39 34v16h-22v-16c-25-4-39-18-41-39h28c2 9 10 15 23 15 12 0 18-4 18-11 0-8-10-10-26-14-20-5-36-13-36-33 0-17 13-29 34-31V73h22Z" fill="#FFFFFF"/>
+  <text x="232" y="143" fill="#111111" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800">Metal Dollar</text>
+</svg>

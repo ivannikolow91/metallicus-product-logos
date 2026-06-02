@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-label="Metallicus logo">
+  <defs>
+    <linearGradient id="metallicusColor" x1="36" y1="38" x2="190" y2="202" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#126B5F"/>
+      <stop offset="1" stop-color="#2858D4"/>
+    </linearGradient>
+  </defs>
+  <rect x="42" y="42" width="156" height="156" rx="38" fill="url(#metallicusColor)"/>
+  <path d="M78 158V82h24l18 31 18-31h24v76h-24v-38l-18 30-18-30v38H78Z" fill="#FFFFFF"/>
+  <text x="232" y="143" fill="#171A1F" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800">Metallicus</text>
+</svg>
