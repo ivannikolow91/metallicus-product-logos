@@ -1,0 +1,618 @@
+const products = [
+  {
+    id: "metallicus",
+    name: "Metallicus",
+    category: "Company",
+    description: "Parent brand logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metallicus/metallicus-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metallicus/metallicus-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metallicus/metallicus-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metallicus/metallicus-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "metal-pay",
+    name: "Metal Pay",
+    category: "Payments",
+    description: "Payment product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metal-pay/metal-pay-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metal-pay/metal-pay-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metal-pay/metal-pay-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metal-pay/metal-pay-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "metal-l2",
+    name: "Metal L2",
+    category: "Network",
+    description: "Layer 2 product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metal-l2/metal-l2-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metal-l2/metal-l2-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metal-l2/metal-l2-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metal-l2/metal-l2-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "metal-blockchain",
+    name: "Metal Blockchain",
+    category: "Network",
+    description: "Blockchain product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-full-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "navy",
+        name: "navy",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-navy.svg",
+        preview: "checker"
+      }
+    ]
+  },
+  {
+    id: "metal-x",
+    name: "Metal X",
+    category: "Exchange",
+    description: "Exchange product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metal-x/metal-x-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metal-x/metal-x-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metal-x/metal-x-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metal-x/metal-x-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "metal-dollar",
+    name: "Metal Dollar",
+    category: "Stablecoin",
+    description: "Stablecoin product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metal-dollar/metal-dollar-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metal-dollar/metal-dollar-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metal-dollar/metal-dollar-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metal-dollar/metal-dollar-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "xpr-network",
+    name: "XPR Network",
+    category: "Network",
+    description: "XPR Network product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/xpr-network/xpr-network-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/xpr-network/xpr-network-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/xpr-network/xpr-network-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/xpr-network/xpr-network-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "metal-client-services",
+    name: "Metal Client Services",
+    category: "Services",
+    description: "Client services product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/metal-client-services/metal-client-services-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/metal-client-services/metal-client-services-color-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "full-black",
+        name: "full-black",
+        asset: "assets/logos/metal-client-services/metal-client-services-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "full-white",
+        name: "full-white",
+        asset: "assets/logos/metal-client-services/metal-client-services-full-white.svg",
+        preview: "dark"
+      }
+    ]
+  },
+  {
+    id: "webauth",
+    name: "WebAuth",
+    category: "Authentication",
+    description: "WebAuth product logo set.",
+    variants: [
+      {
+        id: "color-black",
+        name: "color-black",
+        asset: "assets/logos/webauth/webauth-color-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "color-white",
+        name: "color-white",
+        asset: "assets/logos/webauth/webauth-color-white.svg",
+        preview: "dark"
+      }
+    ]
+  }
+];
+
+const state = {
+  activeProductId: products[0]?.id,
+  selectedVariantByProduct: Object.fromEntries(
+    products.map((product) => [
+      product.id,
+      product.variants.find((variant) => variant.id === "color-black")?.id ?? product.variants[0]?.id
+    ])
+  )
+};
+
+const elements = {
+  productCount: document.querySelector("#productCount"),
+  variantCount: document.querySelector("#variantCount"),
+  productList: document.querySelector("#productList"),
+  emptyState: document.querySelector("#emptyState"),
+  detailPanel: document.querySelector("#detailPanel"),
+  productName: document.querySelector("#productName"),
+  previewStage: document.querySelector("#previewStage"),
+  previewLogo: document.querySelector("#previewLogo"),
+  variantList: document.querySelector("#variantList"),
+  downloadSvg: document.querySelector("#downloadSvg"),
+  downloadPng: document.querySelector("#downloadPng"),
+  toast: document.querySelector("#toast")
+};
+
+const svgTextCache = new Map();
+
+function getActiveProduct(visibleProducts = products) {
+  return visibleProducts.find((product) => product.id === state.activeProductId) ?? visibleProducts[0] ?? null;
+}
+
+function getSelectedVariant(product) {
+  const selectedId = state.selectedVariantByProduct[product.id];
+  return product.variants.find((variant) => variant.id === selectedId) ?? product.variants[0];
+}
+
+function setActiveProduct(productId) {
+  state.activeProductId = productId;
+  render();
+}
+
+function setVariant(productId, variantId) {
+  state.selectedVariantByProduct[productId] = variantId;
+  render();
+}
+
+function createProductNav(product, isActive) {
+  const variant = getSelectedVariant(product);
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = `nav-item${isActive ? " is-active" : ""}`;
+  button.addEventListener("click", () => setActiveProduct(product.id));
+
+  const thumb = document.createElement("span");
+  thumb.className = `nav-thumb ${variant.preview === "dark" ? "dark" : variant.preview === "soft" ? "soft" : ""}`;
+
+  const logo = document.createElement("span");
+  logo.className = "logo-art";
+  logo.setAttribute("aria-hidden", "true");
+  thumb.append(logo);
+  renderInlineLogo(logo, variant, product.name);
+
+  const meta = document.createElement("span");
+  meta.className = "nav-meta";
+  meta.innerHTML = `<span class="nav-name"></span><span class="nav-count"></span>`;
+  meta.querySelector(".nav-name").textContent = product.name;
+  meta.querySelector(".nav-count").textContent = `${product.variants.length} variants`;
+
+  button.append(thumb, meta);
+  return button;
+}
+
+function createVariantChip(product, variant, isActive) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = `variant-chip${isActive ? " is-active" : ""}`;
+  button.addEventListener("click", () => setVariant(product.id, variant.id));
+
+  const label = document.createElement("span");
+  label.textContent = variant.name;
+
+  button.append(label);
+  return button;
+}
+
+function render() {
+  const visibleProducts = products;
+  const activeProduct = getActiveProduct(visibleProducts);
+
+  if (activeProduct && activeProduct.id !== state.activeProductId) {
+    state.activeProductId = activeProduct.id;
+  }
+
+  elements.productCount.textContent = visibleProducts.length;
+  elements.emptyState.hidden = visibleProducts.length > 0;
+  elements.detailPanel.hidden = visibleProducts.length === 0;
+
+  elements.productList.replaceChildren(
+    ...visibleProducts.map((product) => createProductNav(product, product.id === state.activeProductId))
+  );
+
+  if (!activeProduct) {
+    return;
+  }
+
+  const activeVariant = getSelectedVariant(activeProduct);
+  elements.productName.textContent = activeProduct.name;
+  elements.variantCount.textContent = activeProduct.variants.length;
+  elements.previewLogo.setAttribute("aria-label", `${activeProduct.name} ${activeVariant.name} logo`);
+  renderInlineLogo(elements.previewLogo, activeVariant, activeProduct.name);
+  elements.previewStage.className = `preview-stage ${
+    activeVariant.preview === "dark" ? "dark" : activeVariant.preview === "soft" ? "soft" : ""
+  }`;
+
+  elements.variantList.replaceChildren(
+    ...activeProduct.variants.map((variant) =>
+      createVariantChip(activeProduct, variant, variant.id === activeVariant.id)
+    )
+  );
+}
+
+function getDownloadName(product, variant, extension) {
+  return `${product.id}-${variant.id}.${extension}`;
+}
+
+async function getSvgText(asset) {
+  if (!svgTextCache.has(asset)) {
+    svgTextCache.set(
+      asset,
+      fetch(asset).then((response) => {
+        if (!response.ok) {
+          throw new Error(`Could not load ${asset}`);
+        }
+        return response.text();
+      })
+    );
+  }
+
+  return svgTextCache.get(asset);
+}
+
+async function renderInlineLogo(container, variant, label) {
+  container.dataset.asset = variant.asset;
+  container.replaceChildren();
+
+  try {
+    const svgText = await getSvgText(variant.asset);
+    if (container.dataset.asset !== variant.asset) {
+      return;
+    }
+
+    const svgDocument = new DOMParser().parseFromString(svgText, "image/svg+xml");
+    const svg = svgDocument.documentElement;
+    if (svg.nodeName.toLowerCase() !== "svg") {
+      throw new Error(`Invalid SVG: ${variant.asset}`);
+    }
+
+    svg.removeAttribute("width");
+    svg.removeAttribute("height");
+    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+    svg.setAttribute("aria-label", label);
+    svg.setAttribute("focusable", "false");
+    wrapSvgArtwork(svg);
+
+    const importedSvg = document.importNode(svg, true);
+    container.replaceChildren(importedSvg);
+    centerSvgArtwork(importedSvg, importedSvg.querySelector("[data-logo-artwork]"));
+  } catch {
+    if (container.dataset.asset !== variant.asset) {
+      return;
+    }
+
+    const image = document.createElement("img");
+    image.src = variant.asset;
+    image.alt = label;
+    container.replaceChildren(image);
+  }
+}
+
+function wrapSvgArtwork(svg) {
+  const group = svg.ownerDocument.createElementNS("http://www.w3.org/2000/svg", "g");
+  group.setAttribute("data-logo-artwork", "true");
+
+  while (svg.firstChild) {
+    group.appendChild(svg.firstChild);
+  }
+
+  svg.appendChild(group);
+}
+
+function centerSvgArtwork(svg, artwork = svg) {
+  window.requestAnimationFrame(() => {
+    try {
+      const box = artwork.getBBox();
+      if (!Number.isFinite(box.width) || !Number.isFinite(box.height) || box.width <= 0 || box.height <= 0) {
+        return;
+      }
+
+      const padX = Math.max(box.width * 0.04, 4);
+      const padY = Math.max(box.height * 0.08, 4);
+      svg.setAttribute(
+        "viewBox",
+        `${box.x - padX} ${box.y - padY} ${box.width + padX * 2} ${box.height + padY * 2}`
+      );
+    } catch {
+      // Keep the source artboard if the browser cannot measure the SVG.
+    }
+  });
+}
+
+function triggerDownload(url, filename) {
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.append(link);
+  link.click();
+  link.remove();
+}
+
+function getSvgSize(svgText) {
+  const documentSvg = new DOMParser().parseFromString(svgText, "image/svg+xml").documentElement;
+  const width = Number.parseFloat(documentSvg.getAttribute("width") ?? "");
+  const height = Number.parseFloat(documentSvg.getAttribute("height") ?? "");
+  const viewBox = (documentSvg.getAttribute("viewBox") ?? "").split(/\s+/).map(Number);
+
+  if (Number.isFinite(width) && Number.isFinite(height) && width > 0 && height > 0) {
+    return { width, height };
+  }
+
+  if (viewBox.length === 4 && viewBox.every(Number.isFinite) && viewBox[2] > 0 && viewBox[3] > 0) {
+    return { width: viewBox[2], height: viewBox[3] };
+  }
+
+  return { width: 1200, height: 400 };
+}
+
+async function downloadSelectedSvg() {
+  const product = getActiveProduct();
+  if (!product) {
+    return;
+  }
+
+  const variant = getSelectedVariant(product);
+  window.open(new URL(variant.asset, window.location.href).href, "_blank", "noopener");
+}
+
+async function downloadSelectedPng() {
+  const product = getActiveProduct();
+  if (!product) {
+    return;
+  }
+
+  const variant = getSelectedVariant(product);
+
+  try {
+    const source = await getPngSource(variant.asset);
+    const { width, height } = source;
+    const scale = 4;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(width * scale);
+    canvas.height = Math.ceil(height * scale);
+
+    const context = canvas.getContext("2d");
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(source.image, 0, 0, canvas.width, canvas.height);
+    source.dispose();
+
+    const pngBlob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+    if (!pngBlob) {
+      throw new Error("Could not create PNG");
+    }
+
+    const pngUrl = URL.createObjectURL(pngBlob);
+    triggerDownload(pngUrl, getDownloadName(product, variant, "png"));
+    setTimeout(() => URL.revokeObjectURL(pngUrl), 1000);
+    showToast(`${product.name} ${variant.name} downloaded as 4x PNG.`);
+  } catch (error) {
+    showToast(error instanceof Error ? error.message : "Could not create PNG.");
+  }
+}
+
+async function getPngSource(asset) {
+  try {
+    const response = await fetch(asset);
+    if (!response.ok) {
+      throw new Error(`Could not load ${asset}`);
+    }
+
+    const svgText = await response.text();
+    const { width, height } = getSvgSize(svgText);
+    const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
+    const svgUrl = URL.createObjectURL(svgBlob);
+    const image = await loadImage(svgUrl);
+
+    return {
+      image,
+      width,
+      height,
+      dispose: () => URL.revokeObjectURL(svgUrl)
+    };
+  } catch {
+    const image = await loadImage(asset);
+    return {
+      image,
+      width: image.naturalWidth || image.width || 1200,
+      height: image.naturalHeight || image.height || 400,
+      dispose: () => {}
+    };
+  }
+}
+
+function loadImage(src) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = reject;
+    image.src = src;
+  });
+}
+
+function showToast(message) {
+  elements.toast.textContent = message;
+  elements.toast.hidden = false;
+  window.clearTimeout(showToast.timeoutId);
+  showToast.timeoutId = window.setTimeout(() => {
+    elements.toast.hidden = true;
+  }, 3200);
+}
+
+elements.downloadSvg.addEventListener("click", downloadSelectedSvg);
+elements.downloadPng.addEventListener("click", downloadSelectedPng);
+
+render();

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metallicus Products Logos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Brand assets</p>
+          <h1>Metallicus Products Logos</h1>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <aside class="product-nav" aria-label="Products">
+          <div class="section-heading">
+            <span>Products</span>
+            <span id="productCount" class="count-pill">0</span>
+          </div>
+          <div id="productList" class="product-list"></div>
+        </aside>
+
+        <section class="content" aria-live="polite">
+          <div id="emptyState" class="empty-state" hidden>
+            <h2>No logos found</h2>
+          </div>
+
+          <article id="detailPanel" class="detail-panel">
+            <div class="detail-copy">
+              <h2 id="productName"></h2>
+            </div>
+
+            <div class="download-actions" aria-label="Selected logo actions">
+              <button id="downloadSvg" class="button secondary" type="button">
+                SVG
+              </button>
+              <button id="downloadPng" class="button primary" type="button">
+                4x PNG
+              </button>
+            </div>
+
+            <div id="previewStage" class="preview-stage">
+              <div id="previewLogo" class="logo-art" role="img" aria-label=""></div>
+            </div>
+
+            <div class="variant-bar" aria-label="Logo variants">
+              <div class="section-heading">
+                <span>Variants</span>
+                <span id="variantCount" class="count-pill">0</span>
+              </div>
+              <div id="variantList" class="variant-list"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-label="Metal Blockchain logo">
+  <path d="M120 38 194 81v78l-74 43-74-43V81l74-43Z" fill="#111111"/>
+  <path d="M89 99 120 82l31 17v42l-31 17-31-17V99Zm31 13-12 7v12l12 7 12-7v-12l-12-7Z" fill="#FFFFFF"/>
+  <text x="232" y="138" fill="#111111" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">Metal Blockchain</text>
+</svg>
