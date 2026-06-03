@@ -278,6 +278,24 @@ const products = [
         name: "color-white",
         asset: "assets/logos/webauth/webauth-color-white.svg",
         preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/webauth/webauth-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/webauth/webauth-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/webauth/webauth-glyph-white.svg",
+        preview: "dark"
       }
     ]
   }
@@ -526,7 +544,7 @@ async function downloadSelectedSvg() {
   }
 
   const variant = getSelectedVariant(product);
-  triggerDownload(new URL(variant.asset, window.location.href).href, getDownloadName(product, variant, "svg"));
+  window.open(new URL(variant.asset, window.location.href).href, "_blank", "noopener");
 }
 
 async function downloadSelectedPng() {
