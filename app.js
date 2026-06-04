@@ -571,10 +571,23 @@ function getDownloadName(product, variant, extension) {
 }
 
 function renderInlineLogo(container, variant, label) {
+  container.dataset.asset = variant.asset;
+
   const image = document.createElement("img");
-  image.src = variant.asset;
   image.alt = label;
-  container.replaceChildren(image);
+
+  const swap = () => {
+    if (container.dataset.asset === variant.asset) {
+      container.replaceChildren(image);
+    }
+  };
+
+  image.onload = image.onerror = swap;
+  image.src = variant.asset;
+
+  // If the browser already has it cached, .complete is true
+  // and onload will not fire again — swap immediately.
+  if (image.complete) swap();
 }
 
 function triggerDownload(url, filename) {
