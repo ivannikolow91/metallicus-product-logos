@@ -311,6 +311,10 @@ input {
   height: clamp(52px, 11vw, 91px);
 }
 
+.preview-stage.is-glyph .logo-art {
+  width: min(110px, 25%);
+}
+
 .logo-art {
   position: relative;
   overflow: hidden;
