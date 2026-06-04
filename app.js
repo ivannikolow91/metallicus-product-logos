@@ -470,8 +470,6 @@ const elements = {
   toast: document.querySelector("#toast")
 };
 
-const svgTextCache = new Map();
-
 function getActiveProduct(visibleProducts = products) {
   return visibleProducts.find((product) => product.id === state.activeProductId) ?? visibleProducts[0] ?? null;
 }
@@ -571,56 +569,11 @@ function getDownloadName(product, variant, extension) {
   return `${product.id}-${variant.id}.${extension}`;
 }
 
-async function getSvgText(asset) {
-  if (!svgTextCache.has(asset)) {
-    svgTextCache.set(
-      asset,
-      fetch(asset).then((response) => {
-        if (!response.ok) {
-          throw new Error(`Could not load ${asset}`);
-        }
-        return response.text();
-      })
-    );
-  }
-
-  return svgTextCache.get(asset);
-}
-
-async function renderInlineLogo(container, variant, label) {
-  container.dataset.asset = variant.asset;
-  container.replaceChildren();
-
-  try {
-    const svgText = await getSvgText(variant.asset);
-    if (container.dataset.asset !== variant.asset) {
-      return;
-    }
-
-    const svgDocument = new DOMParser().parseFromString(svgText, "image/svg+xml");
-    const svg = svgDocument.documentElement;
-    if (svg.nodeName.toLowerCase() !== "svg") {
-      throw new Error(`Invalid SVG: ${variant.asset}`);
-    }
-
-    svg.removeAttribute("width");
-    svg.removeAttribute("height");
-    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-    svg.setAttribute("aria-label", label);
-    svg.setAttribute("focusable", "false");
-
-    const importedSvg = document.importNode(svg, true);
-    container.replaceChildren(importedSvg);
-  } catch {
-    if (container.dataset.asset !== variant.asset) {
-      return;
-    }
-
-    const image = document.createElement("img");
-    image.src = variant.asset;
-    image.alt = label;
-    container.replaceChildren(image);
-  }
+function renderInlineLogo(container, variant, label) {
+  const image = document.createElement("img");
+  image.src = variant.asset;
+  image.alt = label;
+  container.replaceChildren(image);
 }
 
 function triggerDownload(url, filename) {
