@@ -293,18 +293,7 @@ input {
   min-height: 330px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background:
-    linear-gradient(45deg, rgba(0, 0, 0, 0.035) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(0, 0, 0, 0.035) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.035) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.035) 75%);
-  background-color: #ffffff;
-  background-position:
-    0 0,
-    0 8px,
-    8px -8px,
-    -8px 0;
-  background-size: 16px 16px;
+  background: var(--surface-soft);
   overflow: hidden;
   padding: clamp(28px, 6vw, 72px);
 }
@@ -318,8 +307,13 @@ input {
 }
 
 .preview-stage .logo-art {
-  width: min(640px, 92%);
-  height: min(210px, 46vw);
+  width: min(512px, 74%);
+  height: min(168px, 37vw);
+}
+
+.preview-stage.is-glyph .logo-art {
+  width: min(280px, 60%);
+  height: min(280px, 60vw);
 }
 
 .logo-art {
