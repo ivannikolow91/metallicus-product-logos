@@ -307,8 +307,8 @@ input {
 }
 
 .preview-stage .logo-art {
-  width: min(700px, 85%);
-  height: clamp(52px, 12vw, 91px);
+  width: min(450px, 65%);
+  height: clamp(52px, 11vw, 91px);
 }
 
 .logo-art {
