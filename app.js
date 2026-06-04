@@ -608,11 +608,9 @@ async function renderInlineLogo(container, variant, label) {
     svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
     svg.setAttribute("aria-label", label);
     svg.setAttribute("focusable", "false");
-    wrapSvgArtwork(svg);
 
     const importedSvg = document.importNode(svg, true);
     container.replaceChildren(importedSvg);
-    centerSvgArtwork(importedSvg, importedSvg.querySelector("[data-logo-artwork]"));
   } catch {
     if (container.dataset.asset !== variant.asset) {
       return;
@@ -623,37 +621,6 @@ async function renderInlineLogo(container, variant, label) {
     image.alt = label;
     container.replaceChildren(image);
   }
-}
-
-function wrapSvgArtwork(svg) {
-  const group = svg.ownerDocument.createElementNS("http://www.w3.org/2000/svg", "g");
-  group.setAttribute("data-logo-artwork", "true");
-
-  while (svg.firstChild) {
-    group.appendChild(svg.firstChild);
-  }
-
-  svg.appendChild(group);
-}
-
-function centerSvgArtwork(svg, artwork = svg) {
-  window.requestAnimationFrame(() => {
-    try {
-      const box = artwork.getBBox();
-      if (!Number.isFinite(box.width) || !Number.isFinite(box.height) || box.width <= 0 || box.height <= 0) {
-        return;
-      }
-
-      const padX = Math.max(box.width * 0.04, 4);
-      const padY = Math.max(box.height * 0.08, 4);
-      svg.setAttribute(
-        "viewBox",
-        `${box.x - padX} ${box.y - padY} ${box.width + padX * 2} ${box.height + padY * 2}`
-      );
-    } catch {
-      // Keep the source artboard if the browser cannot measure the SVG.
-    }
-  });
 }
 
 function triggerDownload(url, filename) {

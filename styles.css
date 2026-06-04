@@ -308,13 +308,13 @@ input {
 
 .preview-stage .logo-art {
   width: min(700px, 85%);
-  height: clamp(80px, 18vw, 140px);
+  height: clamp(52px, 12vw, 91px);
 }
 
 .logo-art {
   display: grid;
   place-items: center;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .logo-art svg,
