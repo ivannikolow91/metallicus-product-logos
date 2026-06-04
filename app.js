@@ -28,6 +28,30 @@ const products = [
         name: "full-white",
         asset: "assets/logos/metallicus/metallicus-full-white.svg",
         preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metallicus/metallicus-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metallicus/metallicus-glyph-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "glyph-full-black",
+        name: "glyph-full-black",
+        asset: "assets/logos/metallicus/metallicus-glyph-full-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-full-white",
+        name: "glyph-full-white",
+        asset: "assets/logos/metallicus/metallicus-glyph-full-white.svg",
+        preview: "dark"
       }
     ]
   },
@@ -60,6 +84,24 @@ const products = [
         name: "full-white",
         asset: "assets/logos/metal-pay/metal-pay-full-white.svg",
         preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metal-pay/metal-pay-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/metal-pay/metal-pay-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metal-pay/metal-pay-glyph-white.svg",
+        preview: "dark"
       }
     ]
   },
@@ -91,6 +133,24 @@ const products = [
         id: "full-white",
         name: "full-white",
         asset: "assets/logos/metal-l2/metal-l2-full-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metal-l2/metal-l2-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/metal-l2/metal-l2-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metal-l2/metal-l2-glyph-white.svg",
         preview: "dark"
       }
     ]
@@ -130,6 +190,24 @@ const products = [
         name: "navy",
         asset: "assets/logos/metal-blockchain/metal-blockchain-navy.svg",
         preview: "checker"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metal-blockchain/metal-blockchain-glyph-white.svg",
+        preview: "dark"
       }
     ]
   },
@@ -161,6 +239,24 @@ const products = [
         id: "full-white",
         name: "full-white",
         asset: "assets/logos/metal-x/metal-x-full-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metal-x/metal-x-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/metal-x/metal-x-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metal-x/metal-x-glyph-white.svg",
         preview: "dark"
       }
     ]
@@ -194,6 +290,18 @@ const products = [
         name: "full-white",
         asset: "assets/logos/metal-dollar/metal-dollar-full-white.svg",
         preview: "dark"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/metal-dollar/metal-dollar-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metal-dollar/metal-dollar-glyph-white.svg",
+        preview: "dark"
       }
     ]
   },
@@ -225,6 +333,24 @@ const products = [
         id: "full-white",
         name: "full-white",
         asset: "assets/logos/xpr-network/xpr-network-full-white.svg",
+        preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/xpr-network/xpr-network-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/xpr-network/xpr-network-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/xpr-network/xpr-network-glyph-white.svg",
         preview: "dark"
       }
     ]
@@ -258,6 +384,24 @@ const products = [
         name: "full-white",
         asset: "assets/logos/metal-client-services/metal-client-services-full-white.svg",
         preview: "dark"
+      },
+      {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metal-client-services/metal-client-services-glyph-black.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-color",
+        name: "glyph-color",
+        asset: "assets/logos/metal-client-services/metal-client-services-glyph-color.svg",
+        preview: "checker"
+      },
+      {
+        id: "glyph-white",
+        name: "glyph-white",
+        asset: "assets/logos/metal-client-services/metal-client-services-glyph-white.svg",
+        preview: "dark"
       }
     ]
   },
@@ -283,12 +427,6 @@ const products = [
         id: "glyph-black",
         name: "glyph-black",
         asset: "assets/logos/webauth/webauth-glyph-black.svg",
-        preview: "checker"
-      },
-      {
-        id: "glyph-color",
-        name: "glyph-color",
-        asset: "assets/logos/webauth/webauth-glyph-color.svg",
         preview: "checker"
       },
       {
