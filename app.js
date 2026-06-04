@@ -557,8 +557,7 @@ function render() {
   renderInlineLogo(elements.previewLogo, activeVariant, activeProduct.name);
   elements.previewStage.className = [
     "preview-stage",
-    activeVariant.preview === "dark" ? "dark" : activeVariant.preview === "soft" ? "soft" : "",
-    activeVariant.id.startsWith("glyph") ? "is-glyph" : ""
+    activeVariant.preview === "dark" ? "dark" : activeVariant.preview === "soft" ? "soft" : ""
   ].filter(Boolean).join(" ");
 
   elements.variantList.replaceChildren(
