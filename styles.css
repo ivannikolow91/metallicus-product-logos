@@ -47,7 +47,7 @@ input {
 .topbar {
   display: grid;
   place-items: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 48px;
   max-width: 1440px;
   text-align: center;
 }
@@ -233,7 +233,7 @@ input {
 }
 
 .detail-copy h2 {
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: clamp(18px, 2.2vw, 28px);
   line-height: 1;
 }
 
