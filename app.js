@@ -704,7 +704,10 @@ async function downloadSelectedPng() {
   try {
     const source = await getPngSource(variant.asset);
     const { width, height } = source;
-    const scale = 4;
+
+    // Scale so the longer side is at least 2400px; never less than 8×
+    const TARGET_PX = 2400;
+    const scale = Math.max(8, Math.ceil(TARGET_PX / Math.max(width, height)));
     const canvas = document.createElement("canvas");
     canvas.width = Math.ceil(width * scale);
     canvas.height = Math.ceil(height * scale);
@@ -722,7 +725,7 @@ async function downloadSelectedPng() {
     const pngUrl = URL.createObjectURL(pngBlob);
     triggerDownload(pngUrl, getDownloadName(product, variant, "png"));
     setTimeout(() => URL.revokeObjectURL(pngUrl), 1000);
-    showToast(`${product.name} ${variant.name} downloaded as 4x PNG.`);
+    showToast(`${product.name} ${variant.name} — ${canvas.width}×${canvas.height} PNG downloaded.`);
   } catch (error) {
     showToast(error instanceof Error ? error.message : "Could not create PNG.");
   }
