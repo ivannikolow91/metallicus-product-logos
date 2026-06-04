@@ -717,15 +717,15 @@ async function downloadSelectedPng() {
     context.drawImage(source.image, 0, 0, canvas.width, canvas.height);
     source.dispose();
 
-    const pngBlob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
-    if (!pngBlob) {
+    const webpBlob = await new Promise((resolve) => canvas.toBlob(resolve, "image/webp", 0.92));
+    if (!webpBlob) {
       throw new Error("Could not create PNG");
     }
 
-    const pngUrl = URL.createObjectURL(pngBlob);
-    triggerDownload(pngUrl, getDownloadName(product, variant, "png"));
-    setTimeout(() => URL.revokeObjectURL(pngUrl), 1000);
-    showToast(`${product.name} ${variant.name} — ${canvas.width}×${canvas.height} PNG downloaded.`);
+    const webpUrl = URL.createObjectURL(webpBlob);
+    triggerDownload(webpUrl, getDownloadName(product, variant, "webp"));
+    setTimeout(() => URL.revokeObjectURL(webpUrl), 1000);
+    showToast(`${product.name} ${variant.name} — ${canvas.width}×${canvas.height} WebP downloaded.`);
   } catch (error) {
     showToast(error instanceof Error ? error.message : "Could not create PNG.");
   }
