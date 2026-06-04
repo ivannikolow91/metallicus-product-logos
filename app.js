@@ -292,6 +292,12 @@ const products = [
         preview: "dark"
       },
       {
+        id: "glyph-black",
+        name: "glyph-black",
+        asset: "assets/logos/metal-dollar/metal-dollar-glyph-black.svg",
+        preview: "checker"
+      },
+      {
         id: "glyph-color",
         name: "glyph-color",
         asset: "assets/logos/metal-dollar/metal-dollar-glyph-color.svg",
