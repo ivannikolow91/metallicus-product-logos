@@ -290,7 +290,7 @@ input {
   display: grid;
   grid-column: 1 / -1;
   place-items: center;
-  min-height: 330px;
+  height: 330px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface-soft);
@@ -411,7 +411,7 @@ input {
   }
 
   .preview-stage {
-    min-height: 260px;
+    height: 260px;
   }
 }
 
