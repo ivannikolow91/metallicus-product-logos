@@ -307,13 +307,8 @@ input {
 }
 
 .preview-stage .logo-art {
-  width: min(512px, 74%);
-  height: min(168px, 37vw);
-}
-
-.preview-stage.is-glyph .logo-art {
-  width: min(280px, 60%);
-  height: min(280px, 60vw);
+  width: min(700px, 85%);
+  height: clamp(80px, 18vw, 140px);
 }
 
 .logo-art {
