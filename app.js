@@ -623,7 +623,7 @@ async function downloadSelectedSvg() {
   }
 
   const variant = getSelectedVariant(product);
-  window.open(new URL(variant.asset, window.location.href).href, "_blank", "noopener");
+  triggerDownload(new URL(variant.asset, window.location.href).href, getDownloadName(product, variant, "svg"));
 }
 
 async function downloadSelectedPng() {
